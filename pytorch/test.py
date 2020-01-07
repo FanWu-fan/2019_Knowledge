@@ -87,3 +87,5 @@ model.features.conv0 = nn.Conv2d(6, 64, kernel_size=7, stride=2,
 # mymodel = Net(model)
 # print('-'*50)
 # print(list(mymodel.children()))
+
+id
