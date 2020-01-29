@@ -424,6 +424,7 @@ def train_and_predict_rnn(rnn, get_params, init_rnn_state, num_hiddens,
                           char_to_idx, is_random_iter, num_epochs, num_steps,
                           lr, clipping_theta, batch_size, pred_period,
                           pred_len, prefixes):
+
     if is_random_iter:
         data_iter_fn = data_iter_random
     else:
