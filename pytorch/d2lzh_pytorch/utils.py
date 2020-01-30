@@ -12,7 +12,7 @@ from PIL import Image
 from collections import namedtuple
 
 from IPython import display
-# from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 import torch
 from torch import nn
 import torch.nn.functional as F
