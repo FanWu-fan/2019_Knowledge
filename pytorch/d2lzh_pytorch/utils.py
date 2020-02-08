@@ -697,12 +697,17 @@ def show_images(imgs, num_rows, num_cols, scale=2):
 def train(train_iter, test_iter, net, loss, optimizer, device, num_epochs):
     net = net.to(device)
     print("training on ", device)
+    print("WDWDWDDD")
     batch_count = 0
     for epoch in range(num_epochs):
         train_l_sum, train_acc_sum, n, start = 0.0, 0.0, 0, time.time()
         for X, y in train_iter:
+            print("x: ",x.shape)
+            print("y: ",y, y.shape,)
+
             X = X.to(device)
             y = y.to(device)
+            return None
             y_hat = net(X)
             l = loss(y_hat, y) 
             optimizer.zero_grad()
